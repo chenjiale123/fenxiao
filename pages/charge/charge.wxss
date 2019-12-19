@@ -1,0 +1,66 @@
+/* pages/charge/charge.wxss */
+.container>.left{
+  font-size:24rpx;
+font-family:PingFang SC;
+font-weight:500;
+color:rgba(51,51,51,1);
+display: block;
+margin-top: 38rpx;
+margin-left: 3%;
+float: left;
+clear: both
+}
+.container>.right{
+  font-size:24rpx;
+font-family:PingFang SC;
+font-weight:500;
+color:rgba(51,51,51,1);
+display: block;
+margin-top: 38rpx;
+margin-left: 3%;
+float: right;
+
+}
+.in{
+  position: relative;
+top: -20rpx;
+overflow: none
+}
+.container>.center{
+  width: 100%;
+  height:180rpx;
+background:rgba(255,255,255,1);
+margin-top: 20rpx;
+position: relative;
+top: 80rpx;
+
+}
+.mon{
+width: 100%;
+height: 108rpx;
+display: block;
+border-bottom: 2rpx solid rgba(249,249,249,1);
+font-size:58rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(51,51,51,1);
+position: relative;
+top: -42rpx;
+}
+.tishi{
+  font-size:20rpx;
+font-family:PingFang SC;
+font-weight:500;
+color:rgba(153,153,153,1);
+position: relative;
+top: -42rpx;
+}
+button{
+  width:510rpx;
+height:68rpx;
+background:linear-gradient(rgba(0,221,145,1),rgba(0,221,145,1));
+box-shadow:0px 4px 6px 0px rgba(0,221,145,0.5);
+border-radius:34rpx;
+margin: 0 auto;
+margin-top: 120rpx;
+}

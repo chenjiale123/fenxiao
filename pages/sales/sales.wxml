@@ -1,0 +1,38 @@
+<!--pages/sales/sales.wxml-->
+<view class="container">
+  <view class="top">
+    <view class="in">
+      <view class="left">
+        <text class="yue">余额</text>
+        <text>￥{{balance}}</text>
+      </view>
+      <view class="right">
+        <button bindtap="charge">提现</button>
+        <text>昨日+￥{{yesday}}</text>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="detail">
+    <view class="title">
+      <text>余额明细</text>(记录每日分销赚取的佣金和提现)
+
+
+    </view>
+
+    <view class="list" wx:for="{{list}}" wx:key="{{index}}">
+      <view class="result">
+        <text>{{item.title}}</text>
+        <text>{{item.create_time}}</text>
+      </view>
+      <view class="mon" wx:if="{{item.symbol=='+'}}">
+        <text>{{item.symbol}}￥{{item.capital}}</text>
+      </view>
+           <view class="mon1" wx:else>
+        <text>{{item.symbol}}￥{{item.capital}}</text>
+      </view>
+    </view>
+ 
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<!--pages/charge/charge.wxml-->
+<view class="container">
+<text class="left">提现余额至微信</text>
+<text class="right"> 待到账金额：￥{{wait}}</text>
+<view class="center">
+<view class="in">
+<input class="mon" placeholder="￥0.00" bindinput="pay"></input>
+<text class="tishi">总余额￥{{money}}</text>
+</view>
+</view>
+<button bindtap="tixian">提现</button>
+</view>

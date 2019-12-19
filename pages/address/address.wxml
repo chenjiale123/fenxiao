@@ -1,0 +1,56 @@
+<!--pages/address/address.wxml-->
+<view class="container">
+
+  <view class="top" bindtap="address">
+    <view class="in">
+     <text class="name">{{name}}</text>
+      <text class="phone">{{phone}}</text>
+      <text class="tag" wx:if="{{is_default==1}}" >默认</text>
+      <image class="address" src="../../image/grayjump@2x.png"></image>
+      <text class="ko">地址：{{province}}{{city}}{{area}}{{address}}</text>
+    </view>
+    <image class="bom" src="../../image/article@2x.png"></image>
+
+  </view>
+  <view class="main">
+    <view class="in">
+      <image class="tp" src="{{api}}{{img}}" mode="aspectFit"></image>
+      <view class="intro">
+        <text class="title">{{name1}}</text>
+        <text class="pri">￥{{price}}</text>
+
+        <view class="add">
+          <image src="../../image/colorReduction@2x.png"  bindtap='getMain' data-index="{{index}}"></image>
+          <text>{{salesNum}}</text>
+          <image src="../../image/coloradd@2x.png" bindtap='getPlus' data-index="{{index}}"></image>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <view class="dis">
+    <view class="in">
+      <view class="sum">
+        <text>商品金额</text>
+        <text>¥{{price1}}</text>
+      </view>
+      <view class="order">
+        <text>订单号</text>
+        <text>{{order_no}}</text>
+      </view>
+      <!-- <view class="freight">
+        <text>运费</text>
+        <text>+¥{{fare}}</text>
+      </view> -->
+    </view>
+  
+  </view>
+  <view class="all">
+      <view class="txt">
+        商品总价:
+        <text>￥{{countMoney}}</text>
+      </view>
+
+      <button bindtap="buy">提交订单</button>
+    </view>
+</view>

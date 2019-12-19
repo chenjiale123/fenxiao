@@ -1,0 +1,63 @@
+/* pages/person/person.wxss */
+.container{
+  background: #fff;
+  padding-top: 30rpx;
+  box-sizing: border-box
+}
+.name{
+  display: flex;
+  width: 90%;
+  height: 68rpx;
+
+  margin: 0 auto;
+    margin-bottom: 30rpx;
+
+}
+text{
+  font-size: 32rpx;
+  display: block;
+  width: 30%;
+  height: 100%;
+  line-height: 68rpx;
+}
+input{
+   width: 60%;
+  height: 100%;
+  background: #f2f2f2;
+  border-radius: 44rpx;
+display: block
+}
+input[placeholder]{
+  font-size: 32rpx;
+  color: #b3b3b3;
+  padding-left: 70rpx;
+  box-sizing: border-box;
+}
+.phone{
+  display: flex;
+  width: 90%;
+  height: 68rpx;
+  margin: 0 auto;
+    margin-bottom: 30rpx;
+  margin-top: 30rpx;
+}
+.card{
+  display: flex;
+  width: 90%;
+  height: 68rpx;
+  margin: 0 auto;
+    margin-bottom: 30rpx;
+  margin-top: 30rpx;
+}
+.buy{
+  width:360rpx;
+height:68rpx;
+font-size: 32rpx;
+font-weight:bold;
+color:rgba(51,51,51,1);
+display: block;
+margin: 0 auto;
+margin-top: 104rpx;
+background: #00dc90;
+border-radius: 34rpx;
+}

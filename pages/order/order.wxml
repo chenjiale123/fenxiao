@@ -1,0 +1,23 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+ <view class="list" wx:for="{{form}}" wx:key="{{index}}">
+     <view class="li">
+     <view class="in">
+       <view class="product">
+         <image src="{{api}}{{item.goods_image}}"></image>
+          <view class="dis">
+           <text class="state">{{item.status}}</text>
+           <text class="hao">订单号：{{item.order_no}}</text>
+           <text class="time">下单时间：{{item.create_time}}</text>
+          
+          </view>
+
+       </view>
+       <text>备注：{{item.goods_name}}
+                        </text>
+     </view>
+     
+     </view>
+ </view>
+
+</view>
